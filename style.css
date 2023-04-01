@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+}
+
+nav {
+  background-color: black;
+  color: silver;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  padding: 1rem;
+}
+
+nav ul {
+  display: flex;
+  color: silver;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+li {
+  display: flex;
+  margin-left: 1rem;
+  align-items: auto;
+}
+
+#logo {
+  flex: 1 1 30rem;
+}
+
+a {
+  padding: 8px;
+  border: groove grey 1px;
+  color: silver;
+  text-decoration: none;
+}
+
+/* index */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  height: 90vh;
+  color: silver;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero video {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  top: 50%;
+  left: 50%;
+  z-index: -100;
+  transform: translate(-50%, -50%);
+}
+
+.welcome {
+  padding: 10px;
+  border: groove grey 1px;
+  background-color: black;
+  color: silver;
+  font-style: bold;
+}
+
+/* royal family */
+
+.section {
+  background-color: silver;
+  height: 90vh;
+  padding-top: 5%;
+}
+
+.characters {
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: silver;
+}
+
+.royalFamily {
+  text-align: center;
+  color: black;
+}
+
+img {
+  border: solid 3px black;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  object-position: top;
+}
+figcaption {
+  text-align: center;
+}
+
+/* events */
+
+.events {
+  height: 90vh;
+  padding-top: 5%;
+  background-color: silver;
+}
+
+.calendar {
+  text-align: center;
+  margin-bottom: 5rem;
+  color: black;
+}
+
+.table-style {
+  font-size: large;
+  border-collapse: collapse;
+  width: 70%;
+  height: 70%;
+  margin: 0px;
+  margin: 0px auto;
+  border: 2px solid black;
+}
+
+thead tr {
+  background-color: black;
+  color: white;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 15px 20px;
+  text-align: center;
+}
+
+tbody tr,
+td,
+th {
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  padding: 10px 7px;
+}
+
+/* contact-us */
+
+.contact {
+  height: 90vh;
+  background-color: silver;
+}
+
+form {
+  margin: 30px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  background-color: black;
+}
+
+form h2 {
+  font-size: 20px;
+  color: silver;
+}
+
+form .separation {
+  width: 100%;
+  height: 1px;
+  background-color: silver;
+}
+
+form .body-form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+form .body-form .group {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  color: silver;
+}
+
+form .body-form .left .group input {
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid silver;
+  outline-color: gray;
+  border-radius: 5px;
+}
+
+form .body-form .right {
+  margin-left: 40px;
+}
+
+form .body-form .right .group {
+  height: 100%;
+}
+
+form .body-form .right .group textarea {
+  margin-top: 5px;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid silver;
+  border-radius: 5px;
+  resize: none;
+  height: 81%;
+  outline-color: gray;
+}
+
+form .bot-form button {
+  margin-top: 10px;
+  background-color: silver;
+  color: black;
+  font-size: 15px;
+  border: none;
+  padding: 10px 140px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+.message {
+  color: grey;
+}
